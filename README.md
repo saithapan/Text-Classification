@@ -7,6 +7,7 @@
 4. [TestCases](#run-the-testcases)
 5. [Run Project](#run-project)
 6. [API Testing](#testing-the-api)
+7. [Sample Response](#sample-response)
 
 ## Prerequisites
 
@@ -66,3 +67,6 @@ python .\manage.py runserver
 ### By importing the collection
 
 - In repo i provide the post collection file [here](https://github.com/saithapan/servicepack_assignment/blob/main/servicepark.postman_collection.json), you can import collection and test it directly 
+
+## Sample Response
+![image](https://user-images.githubusercontent.com/36238978/232181719-3d6169ea-b537-433a-9687-80581cdb2a73.png)
