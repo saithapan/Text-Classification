@@ -34,5 +34,5 @@ class FileUploadTestCase(TestCase):
             response = self.client.post("/upload", data, format='multipart')
 
         data = response.json()
-        print(data)
+        #print(data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
