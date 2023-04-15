@@ -65,4 +65,4 @@ python .\manage.py runserver
 
 ### By importing the collection
 
-- In repo i provide the post collection file, you can import collection and test it directly 
+- In repo i provide the post collection file [here](https://github.com/saithapan/servicepack_assignment/blob/main/servicepark.postman_collection.json), you can import collection and test it directly 
