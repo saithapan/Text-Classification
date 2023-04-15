@@ -1,5 +1,13 @@
 # servicepark_assignment
 
+## Table of Contents
+1. [Prerequisites](#prerequisites)
+2. [Installation](#installation)
+3. [Project Setup](#setup)
+4. [TestCases](#run-the-testcases)
+5. [Run Project](#run-project)
+6. [API Testing](#testing-the-api)
+
 ## Prerequisites
 
 - Make sure Redis is install in the system already, if it's not present you can download it from
@@ -30,8 +38,16 @@ celery -A servicepack.celery worker --pool=solo -l info
 python .\manage.py makemigrations
 python .\manage.py migrate
 ```
+## Run the testcases
+- I written the two cases
+   1. To check data is inserting in models table or not
+   2. To check whether API is working or not
+- To run the testcase, execute:-
+```shell
+python .\manage.py test
+```
 
-- Run Project
+## Run Project
 
 ```shell
 python .\manage.py runserver
