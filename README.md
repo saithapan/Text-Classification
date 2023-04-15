@@ -71,4 +71,4 @@ python .\manage.py runserver
 - In repo i provide the post collection file [here](https://github.com/saithapan/servicepack_assignment/blob/main/servicepark.postman_collection.json), you can import collection and test it directly 
 
 ## Sample Response
-![image](https://user-images.githubusercontent.com/36238978/232181719-3d6169ea-b537-433a-9687-80581cdb2a73.png)
+![image](https://user-images.githubusercontent.com/36238978/232181983-fea81054-d8d9-42a9-bb01-c9ae002551a2.png)
