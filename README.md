@@ -1,6 +1,6 @@
 # servicepark_assignment
 
-A Django-based API that allows users to upload text files containing a mixture of text and numeric data. The application processes the uploaded file asynchronously and separates the text and numeric data into two separate columns, which are then saved in a SQLite database. 
+A Django-based API that allows users to upload text files containing a mixture of text and numeric data. The application processes the uploaded file asynchronously using celery and separates the text and numeric data into two separate columns, which are then saved in a SQLite database. 
 
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
