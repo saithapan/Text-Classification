@@ -1,5 +1,5 @@
-pip install django==4.2
-pip install djangorestframework==3.14.0
-pip install celery==5.2.7
-pip install redis==4.5.4
-pip install django-celery-results==2.5.0
+django==4.2
+djangorestframework==3.14.0
+celery==5.2.7
+redis==4.5.4
+django-celery-results==2.5.0
