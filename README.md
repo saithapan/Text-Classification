@@ -29,18 +29,17 @@ pip install -r requirements.txt
 
 ## Setup
 
-- To run the project initially we need run the celery, execute:
-
-```shell
-celery -A servicepack.celery worker --pool=solo -l info
-```
-
-- Now in new terminal proceed for migration
-
+- To run the project initially we need to do migration
 ```shell
 python .\manage.py makemigrations
 python .\manage.py migrate
 ```
+
+- Now open new terminal proceed for Running the celery, execute:
+```shell
+celery -A servicepack.celery worker --pool=solo -l info
+```
+
 ## Run the testcases
 - I written the two cases
    1. To check data is inserting in models table or not
