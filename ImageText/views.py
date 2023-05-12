@@ -22,26 +22,30 @@ class GetGstinFromImage(APIView):
         img_text = pytesseract.image_to_string(Image.open(data))
         img_text = img_text.split('\n')
 
-        gstin_str = [i.strip() for i in img_text if 'gstin' in i.lower()]
-
-        regex = r"GSTIN\s*:\s*(\w+)"
+        pairs = {}
+        for i in range(len(img_text)):
+            e = img_text[i]
+            e_split = e.split()
+            for num, each_word in enumerate(e_split):
+                try:
+                    if ':' == each_word:
+                        pairs[e_split[num - 1]] = e_split[num + 1]
+                    elif ':' == each_word[-1]:
+                        try:
+                            pairs[e_split[num]] = e_split[num+1]
+                        except:
+                            print("not found")
+                except:
+                    print("error")
 
         final_resp = {}
 
-        if gstin_str:
-            total_gstin = []
-            for each_gstin in gstin_str:
-                resp = {}
-                match_gstin = re.search(regex, each_gstin)
-                if match_gstin:
-                    gstin_num = match_gstin.group(1)
-                    resp['GSTIN'] = gstin_num
-                    total_gstin.append(resp)
-            timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        if pairs:
             with open("output/" + timestamp + ".json", 'w+') as f:
-                f.write(json.dumps(total_gstin))
-            final_resp['body'] = total_gstin
+                f.write(json.dumps(pairs))
+            final_resp['body'] = pairs
         else:
             final_resp['body'] = "No GSTIN Number found"
 
