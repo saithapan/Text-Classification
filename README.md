@@ -28,9 +28,9 @@ flask run
 - It will take around 3 to 4 minutes to start the app, since it is loading the word2vec from gensim
 ## Files explanation
 1. `input` - Have test audio files in this folder
-2. `models` - For ML Models are save as pickle and Deep Neural Models are saved as .pth in this folder
-3. `app.py` - Created total six endpoints for Random forest, Logistic Regression, XGBoost, ANN, CNN, LSTM. whenever we call the endpoint it will load the respective model from models and provde the predictions for it
-4. `dataloader.py` - In this we have 3 functions that we are using to train, test data to dataloader for Deep Neural model training
+2. `models` - In this folder For ML Models are save as pickle file and Deep Neural Models are saved as .pth file
+3. `app.py` - This is the main flask app that integrated with models to get predictions for provide audio file. Created total six endpoints for Random forest, Logistic Regression, XGBoost, ANN, CNN, LSTM. whenever we call the endpoint it will load the respective model from models folder and provide the predictions for it
+4. `dataloader.py` - In this we have 3 functions that we are using to convert train, test data to dataloader for Deep Neural model training
 5. `dl_models.py` - In this we created the models classes for ANN, CNN, LSTM
 6. `gensim_embeddings.py` - This is file is used to generate the embeddings for the text.
 7. `main.py` - This is the main file where all training happen for ML and Deep Neural models and this models are saved in the models folder
@@ -68,4 +68,3 @@ flask run
 
 ## Further Steps and Missing Things
 - Due to limited resource i have, Like system configuration etc.., training with State of the Art model like  BERT, RoBERTa, GPT3 etc.. taking long time. So for now i have skip training with SOTA. And also existing models we need more hyperparameters tuning also
-- 
