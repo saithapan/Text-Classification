@@ -1,0 +1,9 @@
+pandas==2.0.1
+nltk==3.8.1
+scikit-learn==1.2.2
+transformers==4.29.2
+gensim==4.3.1
+xgboost==1.75
+torchtext==0.15.2
+flask==2.3.2
+SpeechRecognition==3.10.0
