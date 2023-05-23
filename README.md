@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- xe)
+- Before going further steps please Download the dataset from [here](https://catalog.data.gov/dataset/consumer-complaint-database). Extract the CSV File and place in it input folder. Since this is large dataset it not possible to share it in github
 
 ## Installation
 
@@ -13,19 +13,15 @@
 conda create --name <env_name> python=3.9
 conda activate <env_name>
 pip install -r requirements.txt
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 ```
 
 ## Setup
 
-
-```shell
-
-```
-
 - Run Project in New terminal
 
 ```shell
-python .\manage.py runserver
+flask run
 ```
 ## Django App main files explanation
 1. `ImageText/urls.py` - Main app script containing the API endpoints 
