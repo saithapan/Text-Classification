@@ -1,9 +1,8 @@
-# cognida_assignment
+# DataGrid Assignment
 
 ## Prerequisites
 
-- Make sure tesseract  is install in the system already, if it's not present you can download it from
-  here [tesseract](https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-5.3.1.20230401.exe)
+- xe)
 
 ## Installation
 
@@ -18,12 +17,9 @@ pip install -r requirements.txt
 
 ## Setup
 
-- To run the project initially we need assign the application path of tesseract in config.py file:
 
 ```shell
-config = {
-    "tesseract": r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Update with you tesseract path
-}
+
 ```
 
 - Run Project in New terminal
