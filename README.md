@@ -25,6 +25,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 ```shell
 flask run
 ```
+- It will take around 3 to 4 minutes to start the app, since it is loading the word2vec from gensim
 ## Files explanation
 1. `input` - Have test audio files in this folder
 2. `models` - For ML Models are save as pickle and Deep Neural Models are saved as .pth in this folder
