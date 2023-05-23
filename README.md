@@ -1,6 +1,6 @@
 # DataGrid Assignment
 
-In this project, a classifier is built to categorize customer complaints. The latest dataset from the Consumer Complaint Database is downloaded and used for training the model. I have train this data with Random Forest, Logistic Regression, XGBoost, ANN, CNN, LSTM. I have created total 6 endpoints for this 6 different models. The endpoint will take the audio file as input and returns the text present along with Predicted categorise Label. 
+In this project, a classifier is built to categorize customer complaints. The latest dataset from the Consumer Complaint Database is downloaded and used for training the model. I have train this data with Random Forest, Logistic Regression, XGBoost, ANN, CNN, LSTM. I have created total 6 endpoints for this 6 different models. The endpoint will take the audio file as input and returns the text present along with Predicted categorise Label.
 
 ## Prerequisites
 
@@ -53,13 +53,19 @@ flask run
 ### In Postman
 
 - Once server started running
-- Now Open Postman, select POST Method and provide this url(http://127.0.0.1:8000/img_upload)
-- Now select Body -> form-data -> In key provide key name as `file` and select type as `file` and upload
-  the `sample.png` file and click send button
--![image](https://github.com/saithapan/cognida_assignment/assets/36238978/7afe0504-1bda-47e7-84bc-f41d43aa0df7)
-- **Output Sample Image:-**
-- ![image](https://github.com/saithapan/cognida_assignment/assets/36238978/5f1c299a-4c31-4532-8b38-e4cc0b6a1e33)
+- Now Open Postman, select POST Method and provide this url(http://127.0.0.1:5000/upload/lstm) (Any one from available endpoints)
+- Now select Body -> form-data -> In key provide key name as `audio` and select type as `file` and upload
+  the `audion_1.wav`(Any one from input folder) file and click send button
+![image](https://github.com/saithapan/datagrid_assignment/assets/36238978/5d86a754-0aee-442b-b258-c466c7272811)
 
+## Accuracy for each model on test data
+1. Random Forest -- 67%
+2. Logistic Regression -- 53%
+3. XGBOOST -- 73%
+4. ANN -- 58%
+5. CNN -- 62%
+6. LSTM -- 72%
 
-### Further Steps and Missing Things
-- Due to limited resource i have like system configuration etc.., training with State of the Art model like  BERT, RoBERTa, GPT3 etc.. taking long time. So for now i have skip this.
+## Further Steps and Missing Things
+- Due to limited resource i have, Like system configuration etc.., training with State of the Art model like  BERT, RoBERTa, GPT3 etc.. taking long time. So for now i have skip training with SOTA. And also existing models we need more hyperparameters tuning also
+- 
