@@ -15,7 +15,7 @@ In this project, a classifier is built to categorize customer complaints. The la
 conda create --name <env_name> python=3.9
 conda activate <env_name>
 pip install -r requirements.txt
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 ```
 
 ## Setup
