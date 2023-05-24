@@ -35,7 +35,7 @@ flask run
 6. `gensim_embeddings.py` - This is file is used to generate the embeddings for the text.
 7. `main.py` - This is the main file where all training happen for ML and Deep Neural models and this models are saved in the models folder
 8. `ml_models.py` - In this we created the models for Classic ML.
-9. `preprocess_data.py` - The module present in this file will preprocess the text like removing the stopwords, lowering the text etc....
+9. `preprocess_data.py` - The module present in this file will preprocess the text like removing the stopwords, lowering the text, stemming or lemmatization, removing hashtag, url, email etc....
 10. `stopwords_collection.py` - Instead of using pre-defined stopwords from libraries i used own stopwords collection so that i can't miss the important words
 11. `train_dl_models.py` - Here it will train the Neural Network model
 12. `train_ml_models.py` - Here it will train the ML Model and save the model the models folder
