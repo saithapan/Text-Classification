@@ -4,7 +4,7 @@ In this project, a classifier is built to categorize customer complaints. The la
 
 ## Prerequisites
 
-- Before going further steps please Download the dataset from [here](https://catalog.data.gov/dataset/consumer-complaint-database). Extract the CSV File and place in it `input` folder. Since this is large dataset it not possible to share it in github
+- Before going further steps please Download the dataset from [here](https://catalog.data.gov/dataset/consumer-complaint-database). Extract the CSV File and place it in `input` folder. Since this is large dataset it not possible to share it in github
 
 ## Installation
 
