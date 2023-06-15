@@ -1,4 +1,4 @@
-# DataGrid Assignment
+# Text Classification Assignment
 
 In this project, a classifier is built to categorize customer complaints. The latest dataset from the Consumer Complaint Database is downloaded and used for training the model. I have train this data with Random Forest, Logistic Regression, XGBoost, ANN, CNN, LSTM. I have created total 6 endpoints for this 6 different models. The endpoint will take the audio file as input and returns the text present along with Predicted categorise Label.
 
